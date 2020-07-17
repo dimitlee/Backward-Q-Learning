@@ -211,6 +211,7 @@ def qlearning(num_episodes = 500, gamma_discount = 0.95, alpha = 0.9, epsilon = 
     temper = 8.79
     alpha2 = 0.5
     gcount = 0
+    gamma_discount2 = 0.95
     # start iterating through the episodes
     for episode in range(0, num_episodes):
         env = np.zeros((5, 12))
@@ -255,7 +256,7 @@ def qlearning(num_episodes = 500, gamma_discount = 0.95, alpha = 0.9, epsilon = 
             b_next = btuple[3]
             b_state_action = q_table[:, int(b_next)]
             b_maximum_state_value = np.amax(b_state_action)
-            q_table = update_qTable(q_table, b_state, b_action, b_reward,b_maximum_state_value, gamma_discount, alpha2)
+            q_table = update_qTable(q_table, b_state, b_action, b_reward,b_maximum_state_value, gamma_discount2, alpha2)
             iteration = iteration - 1
         if(gcount == 300):
             print("Agent trained with Q-learning after 300 goal reachings")
