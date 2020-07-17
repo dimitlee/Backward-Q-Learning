@@ -1,14 +1,5 @@
 
-"""
-@Date: 17/03/2019 ~ Version: 1.0
 
-@Author:Zeynep Cankara 
---- CS Undergraduate @ Bilkent University
---- Interested in ML/Deeplearning => Reinforecement Learning...
-
-@Description: Cliff walking problem inspired from Sutton's Reinforcement Learning book.
-              ~ Implementing Q-learning and Sarsa Learning Algorithms
-"""
 
 # import the necessary packages
 import numpy as np
