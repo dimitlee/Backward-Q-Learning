@@ -82,16 +82,6 @@ def epsilon_greedy_policy(state, q_table, epsilon = 0.1):
 
 
 def move_agent(agent, action):
-    """
-    Moves the agent based on action to take
-    
-    Args:
-        agent -- type(tuple) x, y coordinate of the agent on the grid
-        action -- type(int) updates agent's position 
-        
-    Returns:
-        agent -- type(tuple) new coordinate of the agent
-    """
     # get position of the agent
     (posX , posY) = agent
     # UP 
