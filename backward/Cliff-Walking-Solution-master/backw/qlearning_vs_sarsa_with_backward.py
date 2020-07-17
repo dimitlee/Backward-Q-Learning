@@ -164,7 +164,7 @@ def get_reward(state):
 
     return reward, game_end
 
-def update_qTable(q_table, state, action, reward, next_state_value, gamma_discount = 0.95, alpha = 0.9):
+def update_qTable(q_table, state, action, reward, next_state_value, gamma_discount, alpha ):
     """
     Update the q_table based on observed rewards and maximum next state value
     Sutton's Book pseudocode:  Q(S, A) <- Q(S, A) + [alpha * (reward + (gamma * maxValue(Q(S', A'))) -  Q(S, A) ]
