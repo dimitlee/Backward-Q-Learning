@@ -1,5 +1,0 @@
-TEMP = 4.66
-TEMP_MIN = 0.28
-VLOW = -2.0
-LOW = -1.7
-HIGH = 0.8
