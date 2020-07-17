@@ -242,7 +242,6 @@ def qlearning(num_episodes = 500, gamma_discount = 0.9, alphax = 0.9, epsilon = 
 
 def sarsa(num_episodes = 500, gamma_discount = 0.95, alpha = 0.5, epsilon = 0.1):
     """
-    Implementation of SARSA algorithm. (Sutton's book)
     
     Args:
         num_episodes -- type(int) number of games to train agent
