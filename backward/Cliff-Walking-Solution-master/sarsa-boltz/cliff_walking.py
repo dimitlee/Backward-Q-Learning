@@ -115,16 +115,6 @@ def get_state(agent, q_table):
     return state, maximum_state_value
 
 def get_reward(state):
-    """
-    Function returns reward in the given state
-    
-    Args:
-        state -- type(int) state value between [0,47]
-        
-    Returns: 
-        reward -- type(int) Reward in the corresponding state 
-        game_end -- type(bool) Flag indicates game end (falling out of cliff / reaching the goal)
-    """
     # game continues
     game_end = False
     # all states except cliff have -1 value
