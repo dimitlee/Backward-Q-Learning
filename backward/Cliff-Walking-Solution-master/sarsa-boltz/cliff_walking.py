@@ -112,17 +112,6 @@ def move_agent(agent, action):
 
 
 def get_state(agent, q_table):
-    """
-    Determine the state and state value given agent's position
-    
-    Args:
-        agent -- type(tuple) x, y coordinate of the agent on the grid
-        q_table -- type(np.array) Determines state value
-        
-    Returns:
-        state -- type(int) state value between [0,47]
-        max_state_value -- type(float) maximum state value at the position of the agent
-    """
     # get position of the agent
     (posX , posY) = agent
     
