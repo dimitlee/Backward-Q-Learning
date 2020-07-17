@@ -265,7 +265,7 @@ def sarsa(num_episodes = 500, gamma_discount = 0.95, alpha = 0.5, epsilon = 0.1)
     temper = 8.79
     gcount = 0
     for episode in range(0, num_episodes):
-        agent = (a, b) # starting from left down corner
+        agent = (a, b)
         game_end = False
         reward_cum = 0 # cumulative reward of the episode
         step_cum = 0 # keeps number of iterations untill the end of the game
